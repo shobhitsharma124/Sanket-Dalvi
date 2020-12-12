@@ -1,0 +1,29 @@
+<div class=" row mt-4">
+    <div class="col-lg-10 mx-auto">
+    
+<table class="table">
+    <thead class="bg-primary">
+      <tr>
+        <th scope="col">Sr No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Package</th>
+        <th scope="col">Trainer Preference</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor="let appointment of appointments; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{appointment.name}}</td>
+        <td>{{appointment.address}}</td>
+        <td>{{appointment.trainerPackage}}</td>
+        <td>{{appointment.trainerPref}}</td>
+        <td>{{appointment.phone}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
